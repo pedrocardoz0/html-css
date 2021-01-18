@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Cardo Bold";
+    src: url(../fonts/Cardo/Cardo-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Cardo Regular";
+    src: url(../fonts/Cardo/Cardo-Regular.ttf);
+}
