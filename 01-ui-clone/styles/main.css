@@ -5,13 +5,29 @@
 
 ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
+
 li {
+    width: 35%;
     border-width: 0px 0px 2px 0px;
     border-color: #000000;
     border-style: solid;
     padding: 20px;
     margin: 5px;
+}
+
+h1, h3 {
+    font-family: "Montserrat Bold";
+}
+
+p {
+    font-family: "Cardo Regular";
+}
+
+li > p {
+    padding: 1vw;
 }
 
 html, 
@@ -21,6 +37,11 @@ body {
 
 #layout {
     padding: 1vh 5vw;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
 }
 
 .left-indetation {
@@ -40,7 +61,6 @@ body {
     
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .home-logo {
