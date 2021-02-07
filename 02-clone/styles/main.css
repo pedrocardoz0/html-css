@@ -1,0 +1,90 @@
+@font-face {
+    font-family: fg;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../font/FR.woff2) format("woff2"),url(../font/FR.woff) format("woff")
+}
+
+@font-face {
+    font-family: fg;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../font/FL.woff2) format("woff2"),url(../font/FL.woff) format("woff")
+}
+
+@font-face {
+    font-family: sl;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../font/SMLi.woff2) format("woff2"),url(../font/SMLi.woff) format("woff")
+}
+
+@font-face {
+    font-family: sl;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../font/SXLLi.woff2) format("woff2"),url(../font/SXLLi.woff) format("woff")
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: fg;
+    height: 100vh;
+    background: #f5efe1;
+}
+
+#header-title  {
+    text-align: center;
+    line-height: 22.5vw;
+    letter-spacing: -.01em;
+    font-size: 25.41667vw;
+    font-family: sl;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#header-wrapper {
+    z-index: 1;
+    padding: 12.5vw 0 0;
+}
+
+#header-wrapper p {
+    padding: 12.375vw 0 0 3.33333vw;
+    letter-spacing: -.025em;
+    font-family: fg;
+    font-weight: 300;
+    font-size: 5.08333vw;
+}
+
+#header-wrapper p span {
+    display: block;
+    text-transform: uppercase;
+    line-height: 5.16667vw;
+    margin: -.83333vw 0 0;
+    overflow: hidden;
+}
+
+#header-wrapper > p > span:nth-child(n+5) {
+    padding: 0 0 0 23.75vw;
+}
+
+#header-wrapper #social {
+    position: absolute;
+    top: 74.58333vw;
+    left: 3.33333vw;
+    font-size: 1.66667vw;
+    line-height: 1.83333vw;
+    letter-spacing: .02em;
+}
+
+.social-w {
+    margin: -.5vw 0 0;
+}
+
+.social {
+    display: block;
+}
