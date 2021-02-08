@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #FFF;
+}
+
+.header {
+    height: 100vh;
+    background-color: #0B090A;
+    background-image: url(../img/woman.png);
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+    clip-path: polygon(100% 0, 100% 43%, 25% 75%, 0 48%, 0 0);
+}
+
+.text-box {
+    margin: 0 15vw;
+    padding-top: 10%;
+    color: #FFF;
+}
+
+.header-text {
+    display: block;
+}
+
+.header-text-top {
+    padding: 10px 0;
+    color: #B1A7A6;
+}
+
+.header-text-bottom {
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+.header-text-sub {
+    font-weight: 200;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.btn:link,
+.btn:visited {
+    border: 2px solid #A4161A;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+
+    transition: all .5s;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+}
+
+.btn-red {
+    color: #BA181B;
+    font-weight: 600;
+}
