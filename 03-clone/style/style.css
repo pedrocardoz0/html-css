@@ -8,6 +8,35 @@ body {
     background-color: #FFF;
 }
 
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .header {
     height: 100vh;
     background-color: #0B090A;
@@ -25,6 +54,10 @@ body {
 
 .header-text {
     display: block;
+
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .header-text-top {
@@ -51,15 +84,19 @@ body {
     display: inline-block;
     text-decoration: none;
 
-    transition: all .5s;
+    animation-name: fadeInBottom;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
 }
 
 .btn:active {
     transform: translateY(-1px);
+    transition: all .5s;
 }
 
 .btn:hover {
     transform: translateY(-10px);
+    transition: all .5s;
 }
 
 .btn-red {
