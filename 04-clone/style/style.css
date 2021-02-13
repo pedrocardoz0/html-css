@@ -1,0 +1,94 @@
+/*
+Collor Pallet:
+
+White #FFF
+Black #161F28
+Gray #253748
+Orange #EC713F
+Blue #0061FD
+OrangeII #FB9C5A
+Red #57423B
+GrayII #A8B1B6
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #161F28;
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+.header__wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+.navigation-container {
+    list-style: none;
+    padding: 2rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-container__logo {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -8px;
+}
+
+.navigation-container__logo--icon {
+    width: 2.4vw;
+}
+
+.header__principal-wrapper {
+    padding: 0 4vw;
+    height: 70%;
+    display: flex;
+}
+
+.header__principal-wrapper--item {
+    flex: 1;
+}
+
+.gradient {
+    width: 80%;
+    height: 100%;
+    
+    background-size: contain;
+    background-image: linear-gradient(to top right, #FB9C5A, #ec703fa0);
+    padding: 2rem 2rem;
+}
+
+.text-container {
+    border: 1px solid red;
+}
+
+.text-container__h3 {
+    font-size: 2rem;
+}
+
+.text-container__h4 {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.header__images {
+    position: relative;
+    height: 100%;
+    border: 1px solid red;
+    width: 100%;
+    background-image: url(../images/trumpet.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header__images--flip {
+    transform: scaleX(-1);
+}

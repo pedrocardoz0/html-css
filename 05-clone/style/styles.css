@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    
+    font-size: 62.5%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+hr {
+    border: 1px solid #000;
+}
+
+.header {
+    background-color: #ECE6D5;
+    height: 99vh;
+}
+
+.header__navigation-wrapper {
+    padding: 4.8vh 2vw;
+}
+
+.header__navigation-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__navigation-wrapper--big {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.header__navigation-wrapper--h1 {
+    text-align: center;
+    font-size: 6rem;
+    padding: 3.8vh 0 0 0;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 0;
+}
+
+.header__bottom--image {
+    width: 100%;
+}
+
+.header__bottom--text {
+    width: 30%;
+    position: relative;
+    border-left: 1px solid #000;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.header__bottom-text {
+    position: absolute;
+    bottom: 0;
+}
+
+.header__bottom-text--image {
+    padding: 0 0 1rem 0;
+}
+
+.header__bottom-text--h2 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header__bottom-text--span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#regular-roboto {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.padding {
+    padding: 1.5rem;
+}
