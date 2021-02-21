@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Graphik Regular', sans-serif;
+  color: #313942; }
+
+@font-face {
+  body {
+    font-family: "Graphik Regular";
+    src: url("fonts/graphik-regular.otf") format("otf"); } }
+
+ul {
+  list-style: none; }
+
+.rounded-stuff {
+  position: fixed;
+  top: 20%;
+  left: 32%;
+  background-color: #EAE8E3;
+  border-radius: 50%;
+  background-image: url("../../img/pattern.png");
+  background-size: 10rem 10rem;
+  width: 35%;
+  height: 65%;
+  opacity: .3;
+  z-index: -1; }
+
+.primary-text {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 3.75rem;
+  color: #313942;
+  font-weight: 200;
+  padding-top: 40vh;
+  padding-bottom: 10px; }
+
+.secondary-text {
+  width: 30vw;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  color: #8D9092; }
+
+.shop-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin: 6rem 0; }
+  .shop-nav li {
+    border: 1px solid rgba(49, 57, 66, 0.2);
+    border-radius: 10rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    transition: all .8s;
+    color: #566962; }
+    .shop-nav li:first-child {
+      background-color: #566962;
+      color: #FFF; }
+    .shop-nav li:not(:first-child):hover {
+      border: 1px solid #313942; }
+    .shop-nav li:not(:last-child) {
+      margin-right: 1rem; }
+
+.nav-container {
+  background-color: #EDECE9;
+  padding: 1.8rem 0; }
+  .nav-container--list {
+    display: flex;
+    justify-content: space-between; }
+    .nav-container--list li {
+      font-size: 1.4rem;
+      font-weight: 300; }
+      .nav-container--list li div > span {
+        padding: 2px;
+        display: block; }
+
+.header-container {
+  padding: 0 3rem; }
+
+.main-container {
+  padding: 0 3rem; }
+
+body {
+  background-color: #EDECE9; }

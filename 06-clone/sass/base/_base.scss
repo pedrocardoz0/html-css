@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    
+    @include font-face('Graphik Regular', 'graphik-regular');
+    font-family: 'Graphik Regular', sans-serif;
+    color: $color-primary;
+}
+
+ul {
+    list-style: none;
+}
+
+.rounded-stuff {
+    position: fixed;
+    top: 20%;
+    left: 32%;
+    
+    background-color: #EAE8E3;
+    border-radius: 50%;
+    background-image: url("../../img/pattern.png");
+    background-size: 10rem 10rem;
+    width: 35%;
+    height: 65%;
+    
+    opacity: .3;
+    z-index: -1;
+}
