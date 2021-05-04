@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Stretch';
+    src: url(../fonts/StretchPro.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    position:relative;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Stretch';
+    font-size: 10vw;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+header h1 {
+    padding: 1vw;
+}
+
+button:focus { outline:0; }
+
+button:hover { cursor: pointer; }
+
+header.header_wrapper {
+    height: 100vh;
+    text-align: center;
+}
+
+.overflow-x {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.header-top {
+    padding: 2vh 5vw;
+}
+
+.header-middle {
+    padding: 14vh 5vw;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-rounded {
+    border: 2px solid #000;
+    border-radius: 2vw;
+}
+
+.btn-header {
+    padding: 2vh 3vw;
+    
+    font-family: 'Stretch';
+    font-size: 2.2vw;
+    background-color: transparent;
+}
+
+.band-header, .band-header2 {
+    position: absolute;
+    right: -6px;
+    left: -10px;
+    background-color: #000;
+    padding: 2vh 3vw;
+    color: #FFF;
+    transform: rotate(-5deg);
+}
+
+.band-header2 {
+    right: -10px;
+    color: #000;
+    background-color: #55fc00;
+    transform: rotate(5deg);
+}
+
+.band-header h2 {
+    text-transform: uppercase;
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 25s infinite linear;
+    padding-left: 100%;
+}
+
+.band-header2 h2 {
+    text-transform:uppercase;
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 20s infinite linear;
+}
+
+.band-wrapper {
+    position: relative;
+}
+
+.span-one {
+    position: relative;
+}
+
+.span-one{
+    top: 10px;
+    animation: moveTop 0.5s ease infinite alternate;
+}
+
+
+/* Animation Delay */
+h1 span.span-one:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+h1 span.span-one:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+h1 span.span-one:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+h1 span.span-one:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+h1 span.span-one:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+h1 span.span-one:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+h1 span.span-one:nth-child(8) {
+    animation-delay: 0.7s;
+}
+  
+
+/* Animations */
+@keyframes floatText {
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes moveTop {
+    100% {
+        top: -10px;
+    }
+}
+
+/* Responsivity */
+
+@media screen and (max-width: 1024px) {
+    .header-top {
+        font-size: 2vw;
+        padding: 4vh 5vw;
+    }
+
+    .header-middle {
+        padding: 20vh 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-top {
+        font-size: 3.2vw;
+        padding: 4vh 5vw;
+    }
+
+    .band-header h2, .band-header2 h2 {
+        font-size: 3.2vw;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .band-header h2, .band-header2 h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-top {
+        font-size: 4.2vw;
+        padding: 4vh 5vw;
+    }
+
+    .header-middle {
+        padding: 30vh 5vw;
+    }
+}

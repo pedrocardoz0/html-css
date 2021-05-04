@@ -1,0 +1,118 @@
+.section_innovation {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position: relative;
+    margin-top: 10vh;
+    background-color: #141414;
+    height: 80vh;
+    color: #FFF;
+}
+
+.section_innovation-title {
+    position: absolute;
+    top: -50px;
+}
+
+.section_innovation-about {
+    flex: .5;
+    flex-wrap: wrap;
+}
+
+.section_innovation-about h2 {
+    text-align: start;
+    font-size: 3vw;
+    -webkit-text-stroke: .1px #FFF;
+    color: transparent;
+    
+    padding: 2vh 0;
+}
+
+.span-chinese {
+    -webkit-text-stroke: 2px #FFF;
+    font-size: 4vw;
+}
+
+.section_innovation-about p {
+    text-align: start;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.section_footer h2{
+    padding: 3vh 0;
+    font-size: 2vw;
+    text-transform: lowercase;
+}
+
+/* Responsivity */
+
+@media screen and (max-width: 1024px) {
+    .section_innovation-title {
+        top: -4vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section_innovation-title {
+        top: -2.5vh;
+    }
+
+    .section_innovation-about {
+        flex: .6;
+    }
+
+    .section_innovation-about h2 {
+        font-size: 6vw;
+    }
+
+    .span-chinese {
+        font-size: 8vw;
+    }
+
+    .section_innovation-about p {
+        font-size: 3vw;
+    }
+
+    .section_footer h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section_innovation-title {
+        top: -1.5vh;
+    }
+
+    .section_footer h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section_innovation-title {
+        top: -1vh;
+    }
+
+    .section_innovation-about {
+        font-size: 4vw;
+    }
+
+    .section_innovation-about h2 {
+        font-size: 8vw;
+    }
+
+    .span-chinese {
+        font-size: 10vw;
+    }
+
+    .section_innovation-about p {
+        font-size: 4vw;
+    }
+    
+    .section_footer h2 {
+        font-size: 4vw;
+    }
+}

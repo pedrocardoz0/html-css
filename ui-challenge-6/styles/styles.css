@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'RyujinAttack';
+    src: url(../fonts/RyujinAttack.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'RyujinAttack';
+}
+
+.header__wrapper {
+    height: 100vh;
+    background-color: #DA1C24;
+    
+    color: #FFF;
+    font-size: 7.5vw;
+    text-align: left;
+
+}
